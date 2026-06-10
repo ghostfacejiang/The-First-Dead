@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwo5bquaa65h0"]
+
+[ext_resource type="Script" uid="uid://cssjnitc02jrg" path="res://scripts/battle/grid.gd" id="1_c1432"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_2nuh1"]
+size = Vector3(1, 0.1, 1)
+
+[node name="grid" type="Node3D"]
+script = ExtResource("1_c1432")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_2nuh1")
+
+[node name="Label3D" type="Label3D" parent="."]
+text = "123"

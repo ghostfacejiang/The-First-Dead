@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://bgjbq5a2k21ct"]
+
+[ext_resource type="Script" uid="uid://tc8jw0262gxb" path="res://scripts/unit.gd" id="1_o7ajc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k673f"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_1jvru"]
+material = SubResource("StandardMaterial3D_k673f")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_gic7v"]
+
+[node name="Unit" type="CharacterBody3D"]
+script = ExtResource("1_o7ajc")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_1jvru")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_gic7v")
+
+[node name="HPLabel" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0)
+text = "1"

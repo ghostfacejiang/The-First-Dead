@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://p2ayxt4y5nkn"]
+
+[ext_resource type="Script" uid="uid://jewdcpswehfs" path="res://scripts/battle/field.gd" id="1_xq1i4"]
+
+[node name="field" type="Node3D"]
+script = ExtResource("1_xq1i4")
